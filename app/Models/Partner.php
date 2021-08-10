@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Partner extends Model{
+    use HasFactory;
+
+    public $fillable = [
+        'name',
+        'fullname',
+        'logo',
+        'link'
+    ];
+
+    public function project(){
+        return $this->belongsToMany(Project::class, 'project_partner');
+    }
+}

@@ -1,0 +1,23 @@
+.card-header h3 {
+  margin: 0;
+  line-height: 1.4;
+}
+.card-body table td{
+  vertical-align: middle;
+}
+body > .alert-wrapper{
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  z-index: 9999;
+}
+.invalid-feedback {
+  display: block;
+}
+
+.card-body table img{
+  height: 50px;
+}
+.card-body .form-group img{
+  height: 200px;
+}

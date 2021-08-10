@@ -21,9 +21,8 @@
   <link href="{{asset('arsha/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('arsha/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
   <link href="{{asset('arsha/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
-  <!--<link href="{{asset('arsha/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">-->
-  <!--<link href="{{asset('arsha/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">-->
-  <!--<link href="{{asset('arsha/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">-->
+  <link href="{{asset('arsha/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('arsha/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <script src="{{asset('arsha/js/jquery.min.js')}}"></script>
 
@@ -72,9 +71,6 @@
   <script src="{{asset('arsha/vendor/glightbox/js/glightbox.min.js')}}"></script>
   <script src="{{asset('arsha/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
   <script src="{{asset('arsha/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <!--<script src="{{asset('arsha/vendor/php-email-form/validate.js')}}"></script>-->
-  <!--<script src="{{asset('arsha/vendor/waypoints/noframework.waypoints.js')}}"></script>-->
-  <!--<script src="{{asset('arsha/js/coreui.bundle.min.js') }}"></script>-->
 
   <!-- Template Main JS File -->
   <script src="{{asset('arsha/js/main.js')}}"></script>

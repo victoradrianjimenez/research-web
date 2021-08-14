@@ -48,7 +48,8 @@ class PageController extends Controller{
 
     public function index(Request $req){
         return view($this->config->template.".home", array_merge($this->params, [
-            'members' => Member::orderBy('order')->get(),
+            'members' => Member::where('type','!=','past')->
+                where('type','!=','external')->orderBy('order')->get(),
             'descriptions' => [
                 'research' => Section::get_descriptions('research', $this->config->lang, 'section'),
                 'about' => Section::get_descriptions('about', $this->config->lang, 'section'),

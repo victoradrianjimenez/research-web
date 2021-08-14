@@ -49,7 +49,7 @@
       <li class="c-sidebar-nav-item">
         <a class="c-sidebar-nav-link" href="{{route('assets.index')}}">
           <svg class="c-sidebar-nav-icon">
-            <use xlink:href="{{asset('icons/coreui/free-symbol-defs.svg#cui-newspaper')}}"></use>
+            <use xlink:href="{{asset('icons/coreui/free-symbol-defs.svg#cui-copy')}}"></use>
           </svg> Assets
         </a>
       </li>

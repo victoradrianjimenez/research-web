@@ -7,7 +7,7 @@
       <p>{{__('People Working at :name', ['name'=>$config->short_name])}}</p>
     </div>
 
-    <div class="row">
+    <div class="row justify-content-center">
       @foreach($members as $m)
       @php
         $bio = $m->bios()->where('lang','=',$config->lang)->first();

@@ -52,7 +52,7 @@
             <div>
               <label class="col-form-label">Logo</label>
               @if($logo)
-                <img src="{{url('storage/'.$logo)}}" alt="Logo" height="60">
+                <img src="{{url('assets/'.$logo)}}" alt="Logo" height="60">
               @endif
               <button type="button" class="btn btn-sm btn-outline-dark" onclick="remove_logo(this)">Remove</button>
               <input type="hidden" name="descriptions[{{$i}}][logo]" value="{{$logo}}">

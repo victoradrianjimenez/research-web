@@ -21,7 +21,7 @@
           <tbody>
             @foreach($partners as $p)
             <tr id="{{$p->id}}">
-              <td><img src="{{asset('storage/'.$p->logo)}}" height="32"></td>
+              <td><img src="{{asset('assets/'.$p->logo)}}" height="32"></td>
               <td class="alias">{{$p->name}}</td>
               <td><a href="{{$p->link}}">{{$p->fullname}}</a></td>
               <td>

@@ -8,7 +8,7 @@
         @if ($i++ == 0)
           <div class="section-title">
             @if ($d->logo)
-              <img src="{{asset('storage/'.$d->logo)}}" height="40">
+              <img src="{{asset('assets/'.$d->logo)}}" height="40">
             @endif
             <h2>{{$d->title}}</h2>
             <div class="content-align-justify">{!!$d->text!!}</div>
@@ -16,7 +16,7 @@
         @else
           <div class="">
             @if ($d->logo)
-              <img src="{{asset('storage/'.$d->logo)}}" height="40">
+              <img src="{{asset('assets/'.$d->logo)}}" height="40">
             @endif
             <h3>{{$d->title}}</h3>
             <div>{!!$d->text!!}</div>
@@ -25,7 +25,7 @@
       @elseif ($full_description)
           <div class="">
             @if ($d->logo)
-              <img src="{{asset('storage/'.$d->logo)}}" height="40">
+              <img src="{{asset('assets/'.$d->logo)}}" height="40">
             @endif
             <h4>{{$d->title}}</h4>
             <div>{!!$d->text!!}</div>

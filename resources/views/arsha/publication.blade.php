@@ -39,7 +39,7 @@
                         <a href="{{$p['url']}}" class="btn-learn-more" target="_blank">{{__('Link')}}</a>
                       @endif
                       @if($publication->file)
-                        <a href="{{asset('storage/'.$publication->file)}}" target="_blank" class="btn-learn-more">
+                        <a href="{{asset('assets/'.$publication->file)}}" target="_blank" class="btn-learn-more">
                           {{__('File')}}
                         </a>
                       @endif

@@ -15,7 +15,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text">
               <svg class="c-icon">
-                <use xlink:href="{{asset('assets/icons/coreui/free-symbol-defs.svg#cui-magnifying-glass')}}"></use>
+                <use xlink:href="{{asset('icons/coreui/free-symbol-defs.svg#cui-magnifying-glass')}}"></use>
               </svg>
             </span>
           </div>

@@ -40,7 +40,7 @@
             <a href="{{$config->researchgate}}" class="linkedin" title="Researchgate">
               <i class="ri-global-line"></i>
             </a>
-            <a href="{{asset('storage/'.$config->brochure)}}" class="linkedin" title="Brochure">
+            <a href="{{asset('assets/'.$config->brochure)}}" class="linkedin" title="Brochure">
               <i class="ri-file-pdf-line"></i>
             </a>
           </div>

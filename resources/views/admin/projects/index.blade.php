@@ -22,7 +22,7 @@
           <tbody>
             @foreach($projects as $p)
             <tr id="{{$p->id}}">
-              <td><img src="{{asset('storage/'.$p->logo)}}" height="32"></td>
+              <td><img src="{{asset('assets/'.$p->logo)}}" height="32"></td>
               <td class="alias">{{$p->title}}</td>
               <td>{{$p->code}}</td>
               <td>{{$p->period}}</td>

@@ -44,7 +44,7 @@
             <label class="col-md-3 col-form-label" for="file_logo">Logo</label>
             <div class="col-md-9">
               @if($partner->logo)
-              <img src="{{url('storage/'.$partner->logo)}}" alt="Logo" height="60">
+              <img src="{{url('assets/'.$partner->logo)}}" alt="Logo" height="60">
               <input type="hidden" name="logo" value="{{$partner->logo}}">
               @endif
               <input type="file" name="file_logo">

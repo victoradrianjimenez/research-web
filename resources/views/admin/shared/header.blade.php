@@ -4,7 +4,7 @@
       <span class="c-header-toggler-icon"></span>
     </button>
     <a class="c-header-brand d-sm-none" href="#">
-      {{--<img class="c-header-brand" src="{{asset('storage/'.$config->logo_color_small)}}" height="46" alt="Logo" style="height: 46px;">--}}
+      {{--<img class="c-header-brand" src="{{asset('assets/'.$config->logo_color_small)}}" height="46" alt="Logo" style="height: 46px;">--}}
     </a>
     <button class="c-header-toggler c-class-toggler ml-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true"><span class="c-header-toggler-icon"></span></button>
     <ul class="c-header-nav ml-auto mr-4">

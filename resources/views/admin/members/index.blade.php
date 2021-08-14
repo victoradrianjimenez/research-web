@@ -25,7 +25,7 @@
             @foreach($members as $m)
             <tr id="{{$m->id}}">
               <td>{{$m->order}}</td>
-              <td><img src="{{asset('storage/'.$m->photo)}}" height="32"></td>
+              <td><img src="{{asset('assets/'.$m->photo)}}" height="32"></td>
               <td class="alias">{{$m->fullname}}</td>
               <td>{{$m->email}}</td>
               <td>{{$m->created_at}}</td>

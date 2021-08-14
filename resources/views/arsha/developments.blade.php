@@ -35,7 +35,7 @@
         @endphp
         <div class="col-lg-4 col-md-6 portfolio-item filter-{{implode(' filter-',explode('|',$p->class))}}">
           <div class="portfolio-img">
-            <img src="{{asset('storage/'.$p->logo)}}" class="img-fluid" alt="Logo">
+            <img src="{{asset('assets/'.$p->logo)}}" class="img-fluid" alt="Logo">
           </div>
           <div class="portfolio-info">
             <h4><a href="{{route('development',$p->url)}}">{{$description->title}}</a></h4>

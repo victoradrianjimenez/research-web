@@ -1,4 +1,4 @@
-<section id="hero" class="d-flex align-items-center" style="background-image:url('{{asset("storage/".$config->wallpaper)}}');background-size: cover;height: initial;">
+<section id="hero" class="d-flex align-items-center" style="background-image:url('{{asset("assets/".$config->wallpaper)}}');background-size: cover;height: initial;">
 
   <div class="container">
     <div class="row">
@@ -7,7 +7,7 @@
         <h2 style="margin-bottom:0;">{{$config->institution}}</h2>
       </div>
       <div class="col-lg-3 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-        <img src="{{asset('storage/'.$config->logo_color_small)}}" class="img-fluid animated" style="height: 250px; width: initial;">
+        <img src="{{asset('assets/'.$config->logo_color_small)}}" class="img-fluid animated" style="height: 250px; width: initial;">
       </div>
     </div>
   </div>

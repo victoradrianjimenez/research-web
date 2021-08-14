@@ -93,7 +93,7 @@
               <div class="logo_input_wrapper">
                 <div>
                   @if($project->logo)
-                    <img src="{{url('storage/'.$project->logo)}}" alt="Logo" height="60">
+                    <img src="{{url('assets/'.$project->logo)}}" alt="Logo" height="60">
                   @endif
                   {{--<button type="button" class="btn btn-sm btn-outline-dark" onclick="remove_logo(this)">Remove</button>--}}
                   <input type="hidden" name="logo" value="{{$project->logo}}">

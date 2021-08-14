@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('storage/'.$config->favicon)}}" rel="icon">
-  <link href="{{asset('storage/'.$config->favicon)}}" rel="apple-touch-icon">
+  <link href="{{asset('assets/'.$config->favicon)}}" rel="icon">
+  <link href="{{asset('assets/'.$config->favicon)}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="{{asset('arsha/css/fonts.min.css')}}" rel="stylesheet">
@@ -47,7 +47,7 @@
 
       <h1 class="logo me-auto">
         <a href="{{url('')}}">
-          <img src="{{asset('storage/'.$config->logo_color_large)}}" title="{{$config->short_name}}" alt="{{$config->short_name}}">
+          <img src="{{asset('assets/'.$config->logo_color_large)}}" title="{{$config->short_name}}" alt="{{$config->short_name}}">
         </a>
       </h1>
       

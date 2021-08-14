@@ -9,7 +9,7 @@
       <div class="col-lg-4 order-lg-2">
         <div class="portfolio-info box-featured">
           <div class="d-flex justify-content-center">
-            <img src="{{asset('storage/'.$development->logo)}}" height="150">
+            <img src="{{asset('assets/'.$development->logo)}}" height="150">
           </div>
         </div>
         <br>
@@ -52,7 +52,7 @@
             <div class="col-xl-3 col-md-3 align0items-stretch">
               <div class="icon-box box-featured">
                 <div class="icon">
-                  <img src="{{asset('storage/'.$p->logo)}}" height="40">
+                  <img src="{{asset('assets/'.$p->logo)}}" height="40">
                 </div>
                 <h4>
                   <a href="{{$p->link}}" target="_blank" title="{{$p->fullname}}">{{$p->name}}</a>

@@ -53,7 +53,7 @@
             <label class="col-md-3 col-form-label" for="file_photo">Photo</label>
             <div class="col-md-9">
               @if($member->photo)
-              <img src="{{url('storage/'.$member->photo)}}" alt="Photo" height="60">
+              <img src="{{url('assets/'.$member->photo)}}" alt="Photo" height="60">
               <input type="hidden" name="photo" value="{{$member->photo}}">
               @endif
               <input type="file" name="file_photo">

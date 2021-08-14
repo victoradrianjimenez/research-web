@@ -61,7 +61,7 @@
                         <a href="{{$patent['url']}}" class="btn-learn-more" target="_blank">{{__('Link')}}</a>
                       @endif
                       @if($p->file)
-                        <a href="{{asset('storage/'.$p->file)}}" target="_blank" class="btn-learn-more">{{__('File')}}</a>
+                        <a href="{{asset('assets/'.$p->file)}}" target="_blank" class="btn-learn-more">{{__('File')}}</a>
                       @endif
                     </div>
                   </div>

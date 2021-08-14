@@ -16,7 +16,7 @@
       <div class="col-lg-6 mt-4">
         <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
             <div class="pic">
-              <img src="{{asset('storage/'.$m->photo)}}" class="img-fluid" alt="Photo">
+              <img src="{{asset('assets/'.$m->photo)}}" class="img-fluid" alt="Photo">
             </div>
             <div class="member-info">
               <a href="{{route('member',$m->url)}}">

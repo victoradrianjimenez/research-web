@@ -15,7 +15,7 @@
     <meta name="description" content="Research Group Website">
     <meta name="author" content="Adrian Jimenez">
     <meta name="keyword" content="Research,Group,University">
-    <title>{{$config->name}}</title>
+    <title>Research Group</title>
     <meta name="theme-color" content="#ffffff">
     <!-- Scripts -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>

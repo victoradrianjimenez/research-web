@@ -21,7 +21,7 @@
       <div class="col-lg-4 order-lg-2">
         <div class="portfolio-info box-featured">
           <div class="d-flex justify-content-center">
-            <img src="{{asset('storage/'.$member->photo)}}" width="200" height="200">
+            <img src="{{asset('assets/'.$member->photo)}}" width="200" height="200">
           </div>
         </div>
         <br>

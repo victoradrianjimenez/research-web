@@ -92,7 +92,7 @@ Route::resource('admin/sections', SectionController::class)
     ->except('show')
     ->middleware(['auth']);
 Route::resource('admin/assets', AssetController::class)
-    ->except('show','create','edit','update')
+    ->except('show','create','edit')
     ->middleware(['auth']);
 Route::resource('admin/users', UserController::class)
     ->except('show','create','store')

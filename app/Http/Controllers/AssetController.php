@@ -57,6 +57,21 @@ class AssetController extends Controller{
     }
 
     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Member  $member
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $old_name){
+        $request->validate([
+            'name' => 'required|regex:/^[a-z0-9_.-]*$/'
+        ]);
+        Storage::disk('public')->move($old_name, $request->name);
+        return redirect()->action([AssetController::class, 'index']);
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id

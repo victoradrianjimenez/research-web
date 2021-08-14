@@ -11,7 +11,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="full">Name</label>
+            <label class="col-md-3 col-form-label" for="full">Name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" title="Enter the user name" value="{{old('name', $user->name)}}" required=""><span class="help-block"></span>
               @error('name')
@@ -21,7 +21,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="email">Email</label>
+            <label class="col-md-3 col-form-label" for="email">Email <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('email') is-invalid @enderror" type="email" name="email" title="Email address" value="{{old('email', $user->email)}}" required=""><span class="help-block"></span>
               @error('email')

@@ -6,7 +6,7 @@
         <input type="hidden" name="descriptions[{{$i}}][id]" value="{{$id}}">
 
         <div class="col-sm-4">
-          <label class="col-form-label">Language</label>
+          <label class="col-form-label">Language <span class="required">*</span></label>
           <select class="form-control" name="descriptions[{{$i}}][lang]" required="">
             <option value="en" {{$lang=='en'?'selected':''}}>English</option>
             <option value="es" {{$lang=='es'?'selected':''}}>Spanish</option>
@@ -17,7 +17,7 @@
         </div>
         
         <div class="col-sm-4">
-          <label class="col-form-label">Type</label>
+          <label class="col-form-label">Type <span class="required">*</span></label>
           <select class="form-control" name="descriptions[{{$i}}][type]" required="">
             <option value="section" {{$type=='section'?'selected':''}}>Section</option>
             <option value="subsection" {{$type=='subsection'?'selected':''}}>Subsection</option>
@@ -28,7 +28,7 @@
         </div>
         
         <div class="col-md-4">
-          <label class="col-form-label">Title</label>
+          <label class="col-form-label">Title <span class="required">*</span></label>
           <input class="form-control" type="text" name="descriptions[{{$i}}][title]" value="{{$title}}" title="Title input" required="">
           @error('descriptions.'.$i.'.title')
             <div class="invalid-feedback">{{ $message }}</div>
@@ -81,9 +81,11 @@
     </div>
     <div class="col-sm-2">
       <label class="col-form-label">Action</label>
-      <button type="button" class="form-control btn btn-outline-dark" onclick="remove_description(this)">Remove</button>
-      <button type="button" class="form-control btn btn-outline-dark" onclick="up_description(this)">Up</button>
-      <button type="button" class="form-control btn btn-outline-dark" onclick="down_description(this)">Down</button>
+      <div style="width:40px">
+        <button type="button" class="form-control2 btn btn-outline-dark" onclick="remove_description(this)" title="Remove"><i class="cil-minus"></i></button>
+        <button type="button" class="form-control2 btn btn-outline-dark" onclick="up_description(this)" title="Up"><i class="cil-level-up"></i></button>
+        <button type="button" class="form-control2 btn btn-outline-dark" onclick="down_description(this)" title="Down"><i class="cil-level-down"></i></button>
+      </div>
     </div>
   </div>
 </div>

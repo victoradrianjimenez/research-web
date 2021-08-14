@@ -11,7 +11,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="name">Name</label>
+            <label class="col-md-3 col-form-label" for="name">Name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('name') is-invalid @enderror" id="text-input" type="text" name="name" title="Enter the class name" value="{{old('name', (isset($project_classes[0]))?$project_classes[0]->name:'')}}" required=""><span class="help-block"></span>
               @error('name')
@@ -21,7 +21,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="text[]">Text</label>
+            <label class="col-md-3 col-form-label" for="text[]">Text <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="items-wrapper" >
                 @if (old("text"))
@@ -51,7 +51,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="btn btn-outline-dark" onclick="add_item(this)">Add Text</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_item(this)"><i class="cil-plus"></i> Add Text</button>
               </div>
             </div>
           </div>

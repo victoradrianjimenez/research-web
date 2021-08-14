@@ -15,7 +15,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="type">Type</label>
+            <label class="col-md-3 col-form-label" for="type">Type <span class="required">*</span></label>
             <div class="col-md-9">
               <select class="form-control @error('type') is-invalid @enderror" name="type" title="Type of project" required="">
                 <option value="project" {{(old('type', $project->type)=='project'?'selected="selected"':'')}}>Project</option>
@@ -28,7 +28,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="title">Title</label>
+            <label class="col-md-3 col-form-label" for="title">Title <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('title') is-invalid @enderror" type="text" name="title" title="Enter the full title" value="{{old('title', $project->title)}}" required=""><span class="help-block"></span>
               @error('title')
@@ -58,7 +58,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="period">Period</label>
+            <label class="col-md-3 col-form-label" for="period">Period <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('period') is-invalid @enderror" type="text" name="period" placeholder="YYYY-YYYY" value="{{old('period', $project->period)}}" required=""><span class="help-block"></span>
               @error('period')
@@ -68,7 +68,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="url">URL name</label>
+            <label class="col-md-3 col-form-label" for="url">URL name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('url') is-invalid @enderror" type="text" name="url" placeholder="" value="{{old('url', $project->url)}}" required=""><span class="help-block"></span>
               @error('url')
@@ -88,7 +88,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="file_logo">Logo</label>
+            <label class="col-md-3 col-form-label" for="file_logo">Logo <span class="required">*</span></label>
             <div class="col-md-9">
               <div class="logo_input_wrapper">
                 <div>
@@ -107,7 +107,7 @@
           </div>      
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="classes[]">Classes</label>
+            <label class="col-md-3 col-form-label" for="classes[]">Classes <span class="required">*</span></label>
             <div class="col-md-9 col-form-label">
               @if (old("classes"))
                 @foreach($classes as $c)
@@ -143,7 +143,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="participants[]">Participants</label>
+            <label class="col-md-3 col-form-label" for="participants[]">Participants <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="items-wrapper" >
                 @if (old("participants"))
@@ -165,13 +165,13 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="btn btn-outline-dark" onclick="add_item(this)">Add participant</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_item(this)"><i class="cil-plus"></i> Add participant</button>
               </div>
             </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="description_text[]">Description</label>
+            <label class="col-md-3 col-form-label" for="descriptions">Description <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="descriptions-wrapper" >
                 @if (old("descriptions"))
@@ -196,7 +196,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="btn btn-outline-dark" onclick="add_description(this)">Add description</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_description(this)"><i class="cil-plus"></i> Add description</button>
               </div>
             </div>
           </div>

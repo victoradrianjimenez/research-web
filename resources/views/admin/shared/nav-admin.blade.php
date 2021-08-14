@@ -46,6 +46,13 @@
           </svg> News
         </a>
       </li>
+      <li class="c-sidebar-nav-item">
+        <a class="c-sidebar-nav-link" href="{{route('assets.index')}}">
+          <svg class="c-sidebar-nav-icon">
+            <use xlink:href="{{asset('icons/coreui/free-symbol-defs.svg#cui-newspaper')}}"></use>
+          </svg> Assets
+        </a>
+      </li>
       <li class="c-sidebar-nav-item c-sidebar-nav-dropdown c-show"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
         <svg class="c-sidebar-nav-icon">
           <use xlink:href="{{asset('icons/coreui/free-symbol-defs.svg#cui-settings')}}"></use>

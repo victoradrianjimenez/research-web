@@ -10,7 +10,7 @@
         <div class="card-header"><h3>Parameter: {{$configuration->name}}</h3></div>
         <div class="card-body">
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="value">Value</label>
+            <label class="col-md-3 col-form-label" for="value">Value <span class="required">*</span></label>
             <div class="col-md-9">
               @switch($configuration->type)
               @case('html')

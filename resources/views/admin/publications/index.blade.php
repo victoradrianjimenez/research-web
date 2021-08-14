@@ -5,7 +5,7 @@
   <div class="fade-in">
     <div class="card">
       <div class="card-header">
-        <a href="{{route('publications.create')}}" class="btn btn-primary float-right">New...</a>
+        <a href="{{route('publications.create')}}" class="btn btn-primary float-right"><i class="cil-plus"></i> New...</a>
         <h3><i class="fa fa-align-justify"></i> Publications</h3>
       </div>
       <div class="card-body">
@@ -26,10 +26,10 @@
               <td class="alias">{!!$p->citation!!}</td>
               <td>
                 <div class="btn-group-sm float-right" role="group">
-                  <a class="btn btn-info" href="{{route('publication',$p->url)}}">View</a>
-                  <a class="btn btn-warning" href="{{route('publications.edit',$p->id)}}">Edit</a>
+                  <a class="btn btn-info" href="{{route('publication',$p->url)}}" title="View"><i class="cil-find-in-page"></i></a>
+                  <a class="btn btn-warning" href="{{route('publications.edit',$p->id)}}" title="Edit"><i class="cil-pencil"></i></a>
                   <a class="btn btn-danger" data-toggle="modal" data-target="#modal_remove" href="#" 
-                  onclick="remove_item_click(this,'{{route('publications.index')}}','alias')">Remove</a>
+                  onclick="remove_item_click(this,'{{route('publications.index')}}','alias')" title="Remove"><i class="cil-x-circle"></i></a>
                 </div>
               </td>
             </tr>

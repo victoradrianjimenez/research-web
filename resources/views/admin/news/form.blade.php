@@ -16,7 +16,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="date">Date</label>
+            <label class="col-md-3 col-form-label" for="date">Date <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('date') is-invalid @enderror" id="datepicker" type="text" name="date" placeholder="yyyy-mm-dd" value="{{old('date', $news->date)}}" title="Published date of the article" required=""><span class="help-block"></span>
               @error('date')
@@ -26,7 +26,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="url">URL name</label>
+            <label class="col-md-3 col-form-label" for="url">URL name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('url') is-invalid @enderror" type="text" name="url" placeholder="" value="{{old('url', $news->url)}}" title="Part of the URL to access to the news entry in the site" required=""><span class="help-block"></span>
               @error('url')
@@ -36,7 +36,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="author">Author</label>
+            <label class="col-md-3 col-form-label" for="author">Author <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('author') is-invalid @enderror" type="text" name="author" placeholder="" value="{{old('author', $news->author)}}" title="Name of the article author" required=""><span class="help-block"></span>
               @error('author')
@@ -56,7 +56,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="classes[]">Classes</label>
+            <label class="col-md-3 col-form-label" for="classes[]">Classes <span class="required">*</span></label>
             <div class="col-md-9 col-form-label">
               @if (old("classes"))
                 @foreach($classes as $c)
@@ -74,7 +74,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="descriptions">Description</label>
+            <label class="col-md-3 col-form-label" for="descriptions">Description <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="descriptions-wrapper" >
                 @if (old("descriptions"))
@@ -102,7 +102,7 @@
               @enderror
               <br>
               <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark" onclick="add_description(this)">Add description</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_description(this)"><i class="cil-plus"></i> Add description</button>
               </div>
             </div>
           </div>

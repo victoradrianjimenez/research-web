@@ -11,7 +11,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="name">Name</label>
+            <label class="col-md-3 col-form-label" for="name">Name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" title="Enter the short name" value="{{old('name', $partner->name)}}" required=""><span class="help-block"></span>
               @error('name')
@@ -21,7 +21,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="fullname">Full name</label>
+            <label class="col-md-3 col-form-label" for="fullname">Full name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('fullname') is-invalid @enderror" type="text" name="fullname" title="Enter the full name" value="{{old('fullname', $partner->fullname)}}" required=""><span class="help-block"></span>
               @error('fullname')
@@ -41,7 +41,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="file_logo">Logo</label>
+            <label class="col-md-3 col-form-label" for="file_logo">Logo <span class="required">*</span></label>
             <div class="col-md-9">
               @if($partner->logo)
               <img src="{{url('assets/'.$partner->logo)}}" alt="Logo" height="60">

@@ -11,7 +11,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="bibtex">Bibtex</label>
+            <label class="col-md-3 col-form-label" for="bibtex">Bibtex <span class="required">*</span></label>
             <div class="col-md-9">
               <textarea class="form-control @error('bibtex') is-invalid @enderror" name="bibtex" id="bibtex" rows="9" title="Content.." required="">{{old('bibtex',$publication->bibtex)}}</textarea>
               @error('bibtex')
@@ -57,7 +57,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="form-control btn btn-outline-dark" id="btn-remove" onclick="remove_item()">Remove</button>
+                <button type="button" class="form-control btn btn-outline-dark" id="btn-remove" onclick="remove_item()"><i class="cil-minus"></i> Remove</button>
               </div>
             </div>
           </div>

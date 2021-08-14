@@ -15,7 +15,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="url">URL Name</label>
+            <label class="col-md-3 col-form-label" for="url">URL Name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('url') is-invalid @enderror" type="text" name="url" title="Enter the full name" value="{{old('url', $section->url)}}" required=""><span class="help-block"></span>
               @error('url')
@@ -25,7 +25,7 @@
           </div>
           
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="descriptions">Descriptions</label>
+            <label class="col-md-3 col-form-label" for="descriptions">Descriptions <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="descriptions-wrapper" >
                 @if (old("descriptions"))
@@ -58,7 +58,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="btn btn-outline-dark" onclick="add_description(this)">Add description</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_description(this)"><i class="cil-plus"></i> Add description</button>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-sm-4">
-          <label class="col-form-label">Language</label>
+          <label class="col-form-label">Language <span class="required">*</span></label>
           <select class="form-control" name="bios[{{$i}}][lang]" required="">
             <option value="en" {{$lang=='en'?'selected':''}}>English</option>
             <option value="es" {{$lang=='es'?'selected':''}}>Spanish</option>
@@ -13,7 +13,7 @@
           @enderror
         </div>
         <div class="col-md-8">
-          <label class="col-form-label">Role</label>
+          <label class="col-form-label">Role <span class="required">*</span></label>
           <input class="form-control" type="text" name="bios[{{$i}}][role]" value="{{$role}}" title="Role input" required="">
           @error('bios.'.$i.'.role')
             <div class="invalid-feedback">{{ $message }}</div>
@@ -50,7 +50,9 @@
     </div>
     <div class="col-sm-2">
       <label class="col-form-label">Action</label>
-      <button type="button" class="form-control btn btn-outline-dark" onclick="remove_bio(this)">Remove</button>
+      <div style="width:40px">
+        <button type="button" class="form-control btn btn-outline-dark" onclick="remove_bio(this)" title="Remove"><i class="cil-minus"></i></button>
+      </div>
     </div>
   </div>
 </div>

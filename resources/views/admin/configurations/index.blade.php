@@ -31,7 +31,7 @@
               <td>{{$c->value}}</td>
               <td>
                 <div class="btn-group-sm float-right" role="group">
-                  <a class="btn btn-warning" href="{{route('configuration.edit',$c->name)}}">Edit</a>
+                  <a class="btn btn-warning" href="{{route('configuration.edit',$c->name)}}" title="Edit"><i class="cil-pencil"></i></a>
                 </div>
               </td>
             </tr>

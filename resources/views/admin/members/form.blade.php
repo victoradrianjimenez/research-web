@@ -15,7 +15,7 @@
         <div class="card-body">
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="fullname">Full name</label>
+            <label class="col-md-3 col-form-label" for="fullname">Full name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('fullname') is-invalid @enderror" type="text" name="fullname" title="Enter the full name" value="{{old('fullname', $member->fullname)}}" required=""><span class="help-block"></span>
               @error('fullname')
@@ -25,7 +25,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="type">Type</label>
+            <label class="col-md-3 col-form-label" for="type">Type <span class="required">*</span></label>
             <div class="col-md-9">
               <select class="form-control @error('type') is-invalid @enderror" name="type" required="">
                 <option value="" {{old('type',$member->type)==''?'selected':''}}>Please select an option</option>
@@ -40,7 +40,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="url">URL name</label>
+            <label class="col-md-3 col-form-label" for="url">URL name <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('url') is-invalid @enderror" id="text-input" type="text" name="url" title="Name showed in bibliography items" value="{{old('url', $member->url)}}" required=""><span class="help-block"></span>
               @error('url')
@@ -50,7 +50,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="file_photo">Photo</label>
+            <label class="col-md-3 col-form-label" for="file_photo">Photo <span class="required">*</span></label>
             <div class="col-md-9">
               @if($member->photo)
               <img src="{{url('assets/'.$member->photo)}}" alt="Photo" height="60">
@@ -64,7 +64,7 @@
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="order">Order</label>
+            <label class="col-md-3 col-form-label" for="order">Order <span class="required">*</span></label>
             <div class="col-md-9">
               <input class="form-control @error('order') is-invalid @enderror" id="text-input" type="number" name="order" title="Position in the members list" value="{{old('order',$member->order)}}" required=""><span class="help-block"></span>
               @error('order')
@@ -99,13 +99,13 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="btn btn-outline-dark" onclick="add_social(this)">Add social</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_social(this)"><i class="cil-plus"></i> Add social</button>
               </div>
             </div>
           </div>
 
           <div class="form-group row">
-            <label class="col-md-3 col-form-label" for="bios">Biography</label>
+            <label class="col-md-3 col-form-label" for="bios">Biography <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="bios-wrapper" >
                 @if (old("bios"))
@@ -134,7 +134,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
               @enderror
               <div class="btn-group" role="">
-                <button type="button" class="btn btn-outline-dark" onclick="add_bio(this)">Add biography</button>
+                <button type="button" class="btn btn-outline-dark" onclick="add_bio(this)"><i class="cil-plus"></i> Add biography</button>
               </div>
             </div>
           </div>

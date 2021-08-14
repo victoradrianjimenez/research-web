@@ -5,7 +5,7 @@
   <div class="fade-in">
     <div class="card">
       <div class="card-header">
-        <a href="{{route('members.create')}}" class="btn btn-primary float-right">New...</a>
+        <a href="{{route('members.create')}}" class="btn btn-primary float-right"><i class="cil-plus"></i> New...</a>
         <h3><i class="fa fa-align-justify"></i> Members</h3>
       </div>
       <div class="card-body">
@@ -32,10 +32,10 @@
               <td>{{__('app.'.$m->type)}}</td>
               <td>
                 <div class="btn-group-sm float-right" role="group">
-                  <a class="btn btn-info" href="{{route('member', $m->url)}}">View</a>
-                  <a class="btn btn-warning" href="{{route('members.edit',$m->id)}}">Edit</a>
+                  <a class="btn btn-info" href="{{route('member', $m->url)}}" title="View"><i class="cil-find-in-page"></i></a>
+                  <a class="btn btn-warning" href="{{route('members.edit',$m->id)}}" title="Edit"><i class="cil-pencil"></i></a>
                   <a class="btn btn-danger" data-toggle="modal" data-target="#modal_remove" href="#" 
-                  onclick="remove_item_click(this,'{{route('members.index')}}','alias')">Remove</a>
+                  onclick="remove_item_click(this,'{{route('members.index')}}','alias')" title="Remove"><i class="cil-x-circle"></i></a>
                 </div>
               </td>
             </tr>

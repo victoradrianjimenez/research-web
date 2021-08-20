@@ -48,6 +48,7 @@ class PageController extends Controller{
 
     public function index(Request $req){
         return view($this->config->template.".home", array_merge($this->params, [
+            'types' => Member::get_type_list(),
             'members' => Member::where('type','!=','past')->
                 where('type','!=','external')->orderBy('order')->get(),
             'descriptions' => [
@@ -61,6 +62,7 @@ class PageController extends Controller{
     public function members(Request $req){
         return view($this->config->template.".page", array_merge($this->params, [
             'page' => 'members',
+            'types' => Member::get_type_list(),
             'members' => Member::orderBy('order')->get(),
         ]));
     }

@@ -97,6 +97,7 @@
 .portfolio-details .portfolio-description iframe{
   max-width: 100%;
   width: 100%;
+  height: auto;
 }
 .portfolio-details .icon-box{
   text-align: center; 
@@ -178,4 +179,60 @@
 
 .navbar .dropdown ul li {
     min-width: 50px;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding: revert !important;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding: 0 20px !important;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.demoNav {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.demoNav > button{
+  color: #37517e !important;
+  margin-top: 0 !important;
+  border: none !important;
+}
+#bungie {
+  padding: 0 10px 0 20px !important;
+  width: 100%;
+  text-align: center;
+}
+#bungie ul {
+  padding-left: 0;
+  margin-top: 12px; !important;
+}
+@media (min-width:1024px){
+  #left, #right{
+    width: 100px;
+  }
 }

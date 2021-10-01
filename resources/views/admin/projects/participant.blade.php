@@ -1,7 +1,7 @@
 <div class="form-group row">
   <div class="col-sm-10">
     <label class="col-form-label">Name <span class="required">*</span></label>
-    <input class="form-control" type="text" name="participants[]" value="{{$p}}">
+    <input class="form-control" type="text" name="participants[]" value="{{$p}}" required="">
   </div>
   <div class="col-sm-2">
     <label class="col-form-label">Action</label>

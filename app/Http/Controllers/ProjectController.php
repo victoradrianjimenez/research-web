@@ -17,7 +17,7 @@ class ProjectController extends Controller{
         return [
             'type' => 'required|alpha_dash',
             'title' => ['required','string',Rule::unique('projects')->ignore($id)],
-            'logo' => 'string|required_without:file_logo',
+            'logo' => 'required_without:file_logo',
             'file_logo' => 'file|required_without:logo',
             'institution' => 'nullable|string',
             'code' => 'nullable|string',

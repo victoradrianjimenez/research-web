@@ -41,7 +41,7 @@
           <h2>{{$description->title}}</h2>
         </div>
         <div class="portfolio-description content-align-justify">
-          <h2 id="short-bio">{{__('Description')}}</h2>
+          {{--<h2 id="short-bio">{{__('Description')}}</h2>--}}
           <div>{!!$description->text!!}</div>
           <span class="border-separator"></span>
           <h2 id="selected-publications">{{__('Partners')}}</h2>

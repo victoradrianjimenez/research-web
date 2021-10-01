@@ -19,7 +19,7 @@ class SectionController extends Controller{
             'descriptions.*.lang' => 'required|string|size:2',
             'descriptions.*.type' => 'required|string',
             'descriptions.*.title' => 'required|string',
-            'descriptions.*.logo' => 'nullable|string',
+            'descriptions.*.logo' => 'nullable',
             'descriptions.*.file_logo' => 'nullable|file',
             'descriptions.*.text' => 'nullable|string',
             'descriptions.*.link' => 'nullable|string'

@@ -6,7 +6,7 @@ return [
 	'external' => 'Investigador Externo',
 	'support' => 'Personal de Apoyo',
 	'alumni' => 'Alumnos',
-	'past' => 'Miembro Pasado',
+	'past' => 'Miembros Anteriores',
 
     'mail' => 'Correo electrónico',
     'phone' => 'Teléfono',

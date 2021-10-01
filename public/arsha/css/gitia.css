@@ -1,0 +1,303 @@
+/*
+55,81,126 #0,89,116
+40,58,90  #0,89,116
+
+#37517e #005974
+#4668a2 #005974
+#6182ba #007598
+#209dd8 #008CB3
+#23a3df #008CB3
+#31a9e1 #00AAC9
+#47b2e4 #00AAC9
+#6bc1e9 #6DBCC8
+#73c5eb #6DBCC8
+#cbd6e9 #A8DBE1
+
+#28a745 #798525
+#18d26e #8CBA29
+
+#ed3c0d #FF6600
+red     #FF6600
+
+#333 	#2D2C2B
+#ccc 	#C6C8CA
+#ddd    #D6D8DA
+#eee 	#F6F6F6
+*/
+body,
+.portfolio #portfolio-flters li,
+#footer .footer-newsletter{
+	color:#444;
+}
+a,
+.navbar .active,
+.navbar .active:focus,
+.navbar a:hover,
+.navbar li:hover>a,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul li:hover>a,
+.navbar-mobile .active,
+.navbar-mobile a:hover,
+.navbar-mobile li:hover>a,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul li:hover>a,
+.about .content .btn-learn-more,
+#hero .btn-watch-video:hover i,
+.about .content ul i,
+.why-us .accordion-list span,
+.why-us .accordion-list a.collapsed:hover,
+.skills .content ul i,
+.services .icon-box .icon i,
+.services .icon-box:hover h4 a,
+.portfolio .portfolio-item .portfolio-info .details-link:hover,
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.pricing h4 span,
+.pricing .buy-btn,
+.faq .faq-list .icon-help,
+.faq .faq-list a.collapsed:hover,
+.contact .info i,
+#footer .footer-top .footer-links ul i,
+#footer .footer-top .footer-links ul a:hover{
+	color:#00AAC9;
+}
+a:hover{
+	color:#6DBCC8;
+}
+.navbar .dropdown ul a{
+	color:#0c3c53;
+}
+.navbar-mobile a,
+.navbar-mobile .getstarted,
+.section-title h2,
+.why-us .content h3,
+.skills .content h3,
+.skills .progress .skill,
+.services .icon-box h4 a,
+.team .member h4,
+.team .member .social a i,
+.pricing h3,
+.pricing h4,
+.faq .faq-list a.collapsed,
+.contact .info h4,
+.breadcrumbs h2,
+#footer .footer-newsletter h4,
+#footer .footer-top .footer-contact h3,
+#footer .footer-top h4{
+	color:#005974;
+}
+.why-us .content p{
+	color:#848484;
+}
+.why-us .accordion-list a.collapsed{
+	color:#343a40;
+}
+.portfolio .portfolio-item .portfolio-info p{
+	color:#f9fcfe;
+}
+.pricing ul{
+	color:#999;
+}
+.pricing ul i{
+	color:#798525;
+}
+.pricing ul .na,
+.pricing ul .na i{
+	color:#C6C8CA;
+}
+.contact .info p{
+	color:#007598;
+}
+.contact .php-email-form .validate{
+	color:#FF6600;
+}
+.breadcrumbs ol li+li::before{
+	color:#005974;
+}
+#footer .footer-top .footer-contact p{
+	color:#5e5e5e;
+}
+#footer .footer-top .footer-links ul a{
+	color:#777;
+}
+#hero h2{
+	color:rgba(255,255,255,.6);
+}
+
+
+}.navbar .getstarted:hover{
+	background:#00AAC9;
+}
+#hero, 
+#preloader,
+#footer{
+	background:#005974;
+}
+.section-title h2::after,
+.portfolio-details .border-separator::after{
+	background:#8CBA29;
+}
+.back-to-top,
+#hero .btn-get-started,
+.portfolio #portfolio-flters li.filter-active,
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active,
+.pricing .featured .buy-btn,
+.contact .php-email-form button[type=submit],
+#footer .footer-newsletter form input[type=submit],
+#footer .footer-top .social-links a{
+	background:#007598;
+}
+.about .content .btn-learn-more:hover,
+.cta .cta-btn:hover,
+.portfolio #portfolio-flters li:hover,
+.team .member .social a:hover,
+.pricing .buy-btn:hover,
+.contact .info .social-links a:hover,
+.contact .info .address:hover i,
+.contact .info .email:hover i,
+.contact .info .phone:hover i{
+	background:#6DBCC8;
+}
+.back-to-top:hover{
+	background:#6DBCC8;
+}
+#header,#header.header-inner-pages,#header.header-scrolled,
+.navbar-mobile{
+	background:rgba(0,53,69,.9); /*0,89,116*/
+}
+#hero .btn-get-started:hover,
+.contact .php-email-form button[type=submit]:hover,
+#footer .footer-newsletter form input[type=submit]:hover,
+#footer .footer-top .social-links a:hover{
+	background:#008CB3;
+}
+.section-bg,
+.breadcrumbs,
+#footer .footer-newsletter{
+	background:#f3f5fa;
+}
+.section-title h2::before{
+	background:#D6D8DA;
+}
+.skills .progress{
+	background:0 0;
+}
+.skills .progress-bar-wrap{
+	background:#e8edf5;
+}
+.skills .progress-bar{
+	background-color:#005974;
+}
+.cta{
+	background:linear-gradient(rgba(0,89,116,.9),rgba(0,89,116,.9)),url(../img/cta-bg.jpg) fixed center center;
+}
+.portfolio .portfolio-item .portfolio-info{
+	background:rgba(0,89,116,.8);
+}
+.team .member span::after{
+	background:#A8DBE1;
+}
+.team .member .social a{
+	background:#eff2f8;
+}
+.pricing .featured .buy-btn:hover{
+	background:#008CB3;
+}
+.contact .info i{
+	background:#e7f5fb;
+}
+.contact .info .social-links a{
+	background:#2D2C2B;
+}
+.contact .php-email-form .error-message{
+	background:#FF6600;
+}
+.contact .php-email-form .sent-message{
+	background:#8CBA29;
+}
+
+
+.pricing .featured,
+.contact .info,
+.box-featured{
+	border-top-color:#8CBA29;
+}
+.contact .info{
+	border-bottom-color:#8CBA29;
+}
+.contact .php-email-form .loading:before{
+	border-top-color:#F6F6F6;
+}
+.contact .php-email-form input:focus,.contact .php-email-form textarea:focus{
+	border-color:#00AAC9;
+}
+
+
+body{
+	font-family:"Swiss721 BT","Open Sans",sans-serif;
+}
+.about .content .btn-learn-more,
+.why-us .accordion-list a,
+.skills .content h3,
+.skills .progress .skill,
+.portfolio #portfolio-flters li,
+.faq .faq-list a{
+	font-family: "Swiss721 BrRnd BT",Poppins,sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+#hero h2,
+.cta p,
+.pricing .buy-btn,
+.pricing h4,
+#footer .footer-top .footer-contact p{
+	font-family: "Swiss721 Cn BT",Jost,sans-serif;
+}
+.why-us .content h3,
+.pricing h4,
+.contact .php-email-form .validate
+{
+	font-weight:400;
+}
+#header .logo,
+.navbar a,.navbar a:focus,
+.navbar .dropdown ul a,
+#hero h2,
+.about .content .btn-learn-more,
+.why-us .accordion-list a,
+.services .icon-box h4,
+.cta p,
+.portfolio #portfolio-flters li,
+.team .member span,
+.pricing h3,
+.pricing .buy-btn,
+.faq .faq-list a
+{
+	font-weight:400;
+}
+.navbar .getstarted,
+.about .content h3,
+.why-us .accordion-list span,
+.skills .progress .skill,
+.portfolio .portfolio-item .portfolio-info h4,
+.contact .info h4,
+.contact .php-email-form .error-message,
+.contact .php-email-form .sent-message,
+.breadcrumbs h2,
+#footer .footer-newsletter h4,
+#footer .footer-top .footer-contact h3
+{
+	font-weight:700;
+}
+#hero h1,
+.section-title h2,
+.why-us .content h4,
+.skills .content h3,
+.cta h3,
+.portfolio-details .portfolio-info h3,
+.portfolio-details .portfolio-description h2,
+.team .member h4,
+#footer .footer-top h4
+{
+	font-weight:700;
+}

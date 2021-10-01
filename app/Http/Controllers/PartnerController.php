@@ -14,7 +14,7 @@ class PartnerController extends Controller{
             'name' => 'required|string',
             'fullname' => 'required|string',
             'link' => 'nullable|url',
-            'logo' => 'string|required_without:file_logo',
+            'logo' => 'required_without:file_logo',
             'file_logo' => 'file|required_without:logo'
         ];
     }

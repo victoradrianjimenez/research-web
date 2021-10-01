@@ -15,6 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="{{asset('arsha/css/fonts.min.css')}}" rel="stylesheet">
+  <link href="{{asset('arsha/css/fonts-gitia.css')}}" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('arsha/vendor/aos/aos.css')}}" rel="stylesheet">
@@ -29,6 +30,7 @@
   <!-- Template Main CSS File -->
   <link href="{{asset('arsha/css/style.css')}}" rel="stylesheet">
   <link href="{{asset('arsha/css/app.css')}}" rel="stylesheet">
+  <link href="{{asset('arsha/css/gitia.css')}}" rel="stylesheet">
 
   @stack('styles')
 

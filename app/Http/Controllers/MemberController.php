@@ -17,7 +17,7 @@ class MemberController extends Controller{
             'url' => ['required','alpha_dash',Rule::unique('members')->ignore($id)],
             'type' => 'required|alpha_dash',
             'fullname' => 'required|string',
-            'photo' => 'string|required_without:file_photo',
+            'photo' => 'required_without:file_photo',
             'file_photo' => 'file|required_without:photo',
             'order' => 'required|integer',
             'socials' => 'array',

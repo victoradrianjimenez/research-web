@@ -17,6 +17,10 @@ class Publication extends Model{
         return $this->belongsToMany(Member::class, 'publication_member');
     }
 
+    public function project(){
+        return $this->belongsToMany(Project::class, 'project_publication');
+    }
+
     public function parse(){
         $entry = $this->parse_string($this->bibtex);
         if (is_array($entry)){

@@ -32,4 +32,8 @@ class Project extends Model{
         return $this->hasMany(ProjectDescription::class, 'project_id', 'id');
     }
 
+    public function publications(){
+        return $this->belongsToMany(Publication::class, 'project_publication');
+    }
+
 }

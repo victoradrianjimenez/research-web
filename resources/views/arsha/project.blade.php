@@ -58,8 +58,43 @@
           <h2 id="short-bio">{{__('Description')}}</h2>
           <div>{!!$description->text!!}</div>
           <span class="border-separator"></span>
-          <h2 id="selected-publications">{{__('Partners')}}</h2>
+          @php
+            $n_patents = 0;
+            $n_publications = 0;
+            foreach($project->publications as $p){
+              if(strtolower($p->type) == 'patent')
+                $n_patents++;
+              else
+                $n_publications++;
+            }
+          @endphp
+          @if($n_patents)
+            <h2>{{__('Patent Applications')}}</h2>
+            <ul>
+              @foreach($project->publications as $p)
+                @if(strtolower($p->type) == 'patent')
+                  <li>{!!$p->citation!!}</li>
+                    <a href="{{route('publication', $p->url)}}">{{__('Read More')}}...</a>
+                  </li>
+                @endif
+              @endforeach
+            </ul>
+          @endif
+          @if($n_publications)
+            <h2>{{__('Publications')}}</h2>
+            <ul>
+              @foreach($project->publications as $p)
+                @if(strtolower($p->type) != 'patent')
+                  <li>{!!$p->citation!!}</li>
+                    <a href="{{route('publication', $p->url)}}">{{__('Read More')}}...</a>
+                  </li>
+                @endif
+              @endforeach
+            </ul>
+          @endif
+          <span class="border-separator"></span>
         </div>
+        <h2>{{__('Partners')}}</h2>
         <div class="services section-bg">
           <div class="row">
             @foreach($project->partners as $p)

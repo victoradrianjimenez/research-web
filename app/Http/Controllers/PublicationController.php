@@ -125,4 +125,10 @@ class PublicationController extends Controller{
         $publication->delete();
         return ['status' => 'OK', 'message' => 'The record was successfully deleted.'];
     }
+
+    public function search(Request $request){
+        return Publication::select(['id','url','citation'])
+            ->where('citation', 'like', '%'.$request->key.'%')
+            ->orderBy('url')->get();
+    }
 }

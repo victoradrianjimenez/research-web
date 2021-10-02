@@ -98,5 +98,8 @@ Route::resource('admin/users', UserController::class)
     ->except('show','create','store')
     ->middleware(['auth']);
 
+Route::post('admin/publications/search', [PublicationController::class, 'search'])
+    ->name('publications_search');
+
 Route::get('{url}', [PageController::class, 'page'])
     ->name('page');

@@ -143,6 +143,38 @@
           </div>
           
           <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="publications[]">Publications</label>
+            <div class="col-md-9 col-form-label">
+              <div id="publications-wrapper" >
+                @if (old("publications") && old("publications_text"))
+                @php $pt = old("publications_text"); @endphp
+                @foreach(old("publications") as $i => $p)
+                  @include('admin.projects.publication', [
+                    'id' => $p,
+                    'url' => $pt[$i]])
+                @endforeach
+                @else
+                @foreach($project->publications as $i => $p)
+                  @include('admin.projects.publication', [
+                    'id' => $p['id'],
+                    'url' => $p['url']])
+                @endforeach
+                @endif
+              </div>
+              @error('publications')
+                <div class="invalid-feedback">{{ $message }}</div>
+              @enderror
+              <div class="btn-group" role="">
+                <a class="btn btn-outline-dark" data-toggle="modal" 
+                  data-target="#modal_publication_search" href="#" 
+                  title="Add publication...">
+                  <i class="cil-plus"></i> Add publication...
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group row">
             <label class="col-md-3 col-form-label" for="participants[]">Participants <span class="required">*</span></label>
             <div class="col-md-9">
               <div id="items-wrapper" >
@@ -214,8 +246,12 @@
     <div id="description_template" style="display:none;">
       @include('admin.projects.description', ['lang'=>'', 'title'=>'', 'text'=>'', 'i' => ''])
     </div>
+    <div id="publication_template" style="display:none;">
+      @include('admin.projects.publication', ['id'=>'', 'url'=>''])
+    </div>
   </div>
 </div>
+@include('admin.shared.modal-publication-search')
 @endsection
 
 @push('scripts')
@@ -234,6 +270,17 @@
   }
   function remove_description(elem){
     $(elem).parentsUntil('#descriptions-wrapper').remove();
+  }
+  function add_publication(id, url){
+    if( $('#publications-wrapper [name="publications[]"][value="'+id+'"]').length == 0){
+      var obj = $($('#publication_template').html());
+      obj.find('[name="publications_text[]"]').attr('value', url);
+      obj.find('[name="publications[]"]').attr('value', id);
+      $('#publications-wrapper').append(obj);
+    }
+  }
+  function remove_publication(elem){
+    $(elem).parentsUntil('#publications-wrapper').remove();
   }
   function remove_logo(elem){
     var obj = $(elem).parentsUntil('.logo_input_wrapper');

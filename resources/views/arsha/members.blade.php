@@ -10,8 +10,11 @@
     <div class="row justify-content-center">
       @foreach($types as $t)
         @php $ms = $members->where('type','=',$t); @endphp
-        @if ($ms->count()>0)
-          <h3>{{__('app.'.$t)}}</h3>
+        {{--@if ($ms->count()>0)--}}
+          {{--<h3>{{__('app.'.$t)}}</h3>--}}
+        {{--@endif--}}
+        @if ($ms->count()>0 && $t == 'past')
+          <h3 style="margin-top: 20px;">{{__('app.'.$t)}}</h3>
         @endif
         @foreach($ms as $m)
           @php

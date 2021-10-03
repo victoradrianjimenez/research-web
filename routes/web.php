@@ -58,6 +58,8 @@ Route::get('contact', [PageController::class, 'contact'])
     ->name('contact');
 Route::get('locale/{locale}', [PageController::class, 'locale'])
     ->name('locale');
+Route::get('atom.xml', [PageController::class, 'feed'])
+    ->name('feed');
 
 require __DIR__.'/auth.php';
 

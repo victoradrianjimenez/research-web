@@ -172,4 +172,16 @@ class PageController extends Controller{
         }
         return back();
     }
+
+    public function feed(Request $req){
+        $content = view('feed', array_merge($this->params, [
+            'page' => 'news',
+            'category' => '',
+            'classes' => NewsClass::where('lang','=',$this->config->lang)->get(),
+            'news' => News::orderBy('date','desc')
+                ->simplePaginate($this->config->news_number),
+        ]));
+        return response($content, 200)->header('Content-Type', 'text/xml');
+    }
+    
 }

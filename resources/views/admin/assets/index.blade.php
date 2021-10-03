@@ -30,7 +30,7 @@
               {{--<td>{{asset('assets/'.$f->name)}}</td>--}}
               <td>
                 <div class="btn-group-sm float-right" role="group">
-                  <a class="btn btn-primary" href="#" onclick="copyTextToClipboard($(this).parent());return false;" title="Copy URL to clipboard"><i class="cil-copy"></i></a>
+                  <a class="btn btn-primary" href="#" onclick="copyTextToClipboard('/assets/'+$(this).parentsUntil('tbody').find('.alias').html());return false;"><i class="cil-copy"></i></a>
                   <a class="btn btn-warning" data-toggle="modal" data-target="#modal_rename" href="#" 
                   onclick="rename_item_click(this,'{{route('assets.index')}}','alias')" title="Rename"><i class="cil-pencil"></i></a>
                   <a class="btn btn-danger" data-toggle="modal" data-target="#modal_remove" href="#" 

@@ -7,12 +7,10 @@ function showInfoNotification(msg, status, link) {
     '</button>'+
     '</div>').last().delay(10000).fadeOut(200));
 }
-function copyTextToClipboard(element) {
+function copyTextToClipboard($text) {
   var $temp = $("<input>");
-  var $text = $.trim($(element).text());
   $("body").append($temp);
   $temp.val($text).select();
   document.execCommand("copy");
   $temp.remove();
-  return $text;
 }
